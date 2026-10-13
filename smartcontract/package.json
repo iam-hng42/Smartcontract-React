@@ -1,0 +1,23 @@
+{
+  "name": "ptit-dominiondao-contracts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "check:sepolia": "hardhat run scripts/check-sepolia.js --network sepolia",
+    "deploy:first": "hardhat run scripts/sample-script.js --network sepolia",
+    "deploy:sepolia": "hardhat run scripts/deploy-dao.js --network sepolia",
+    "export:abi": "hardhat run scripts/export-abi.js"
+  },
+  "devDependencies": {
+    "hardhat": "^2.28.0",
+    "@nomiclabs/hardhat-ethers": "2.2.3",
+    "ethers": "5.8.0",
+    "dotenv": "16.6.1",
+    "chai": "4.5.0",
+    "solc": "0.8.20"
+  },
+  "dependencies": { "@openzeppelin/contracts": "4.9.6" },
+  "engines": { "node": ">=22" }
+}
